@@ -1,6 +1,6 @@
 schemaVersion: 2.3.0
 metadata:
-  name: kai-migrationex
+  name: mta-examples
 attributes:
   controller.devfile.io/storage-type: ephemeral
 projects:
@@ -8,6 +8,12 @@ projects:
     git:
       remotes:
         origin: 'https://github.com/konveyor-ecosystem/migrationex'
+      checkoutFrom:
+        revision: main
+  - name: coolstore
+    git:
+      remotes:
+        origin: 'https://github.com/konveyor-ecosystem/coolstore'
       checkoutFrom:
         revision: main
 components:
